@@ -1,0 +1,48 @@
+.fondo_nota{
+    background-color: white;
+    padding: 15px;
+    min-width: 300px;
+    max-width: 500px;
+    min-height: 130px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.fondo_nota button{
+    color: white;
+    background-color: red;
+    border-radius: 100px;
+    border: none;
+    padding: 6px;
+    padding-left: 9px;
+    padding-right: 9px;
+
+    position: absolute;
+    right: -10px;
+    top: -8px;
+
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+    transition: transform 0.1s;
+}
+
+.fondo_nota button:hover{
+    transform: scale(1.1);
+}
+
+.fondo_nota h4{
+    margin-top: 10px;
+    display: flex;
+}
+
+.fondo_nota h4 span{
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.fondo_nota h3{
+    margin-bottom: 10px;
+    text-align: justify;
+}
