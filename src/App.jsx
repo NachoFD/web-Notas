@@ -57,7 +57,7 @@ function App() {
           style={ tema == 'Claro' ? 
           {
             boxShadow: 'rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px', 
-            backgroundColor: 'rgb(230, 230, 230)'
+            backgroundColor: 'white'
           } 
           : 
           {
@@ -77,7 +77,7 @@ function App() {
               style={tema == 'Claro' ? {border: '2px solid black'} : {}}
             />
 
-            <button onClick={agregarNota} style={tema == 'Claro' ? {borderColor: 'black'} : {}}>+</button>
+            <button onClick={agregarNota} style={tema == 'Claro' ? {borderColor: 'black', marginRight: '4px'} : {}}>+</button>
         </header>
 
 
@@ -88,6 +88,8 @@ function App() {
         </div>
 
       </div>
+
+        <h4 className='mensaje' style={ tema == 'Claro' ? {color: 'black'} : {color: 'rgba(255, 255, 255, 0.591)'} }>Las notas son borradas al actualizar o recargar la pagina</h4>
     </main>
   )
 }
