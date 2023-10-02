@@ -74,16 +74,16 @@ function App() {
               onChange={handleChange}
               placeholder='Agregar una nota'
               
-              style={tema == 'Claro' ? {border: '2px solid black'} : {}}
+              style={tema == 'Claro' ? {border: '2px solid black'} : {backgroundColor: 'black', color: 'gray'}}
             />
 
-            <button onClick={agregarNota} style={tema == 'Claro' ? {borderColor: 'black', marginRight: '4px'} : {}}>+</button>
+            <button onClick={agregarNota} style={tema == 'Claro' ? {borderColor: 'black', marginRight: '4px'} : {backgroundColor: 'black', color: 'gray'}}>+</button>
         </header>
 
 
         <div className='notas'>
             {notas.map((nota, index) => (
-              <Nota key={index} fecha={nota.fecha} nota={nota.nota} eliminar={() => eliminarNota(nota)}/>
+              <Nota key={index} fecha={nota.fecha} nota={nota.nota} eliminar={() => eliminarNota(nota)} tema={tema}/>
             ))}
         </div>
 

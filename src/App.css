@@ -78,7 +78,7 @@ body{
 
 .notas{
     margin-top: 220px;
-    margin-bottom: 50px;
+    margin-bottom: 75px;
     display: flex;
     gap: 25px;
     flex-wrap: wrap;
@@ -92,4 +92,31 @@ body{
     bottom: 0;
     left: 30px;
     font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+
+    .escribir_nota{
+        width: 100%;
+    }
+
+    .escribir_nota input{
+        width: 60%;
+    }
+
+    .mensaje{
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 650px){
+    
+    .icono_tema{
+        top: 5px;
+        right: 5px;
+        max-height: 35px;
+        max-width: 35px;
+    }
 }
